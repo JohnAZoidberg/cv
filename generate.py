@@ -131,7 +131,7 @@ def get_pub_md(context, config):
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
-            p = BibTexParser(f.read(), bc.author).get_entry_list()
+            p = BibTexParser(data=f.read(), customization=bc.author).get_entry_list()
         for pub in p:
             for field in pub:
                 pub[field] = context.make_replacements(pub[field])
