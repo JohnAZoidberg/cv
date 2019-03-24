@@ -246,12 +246,17 @@ class RenderContext(object):
                     continue
                 section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')
                 section_data['items'] = section_content
-            elif section_tag == 'service':
-                section_data['items'] = section_content
+            elif section_tag == 'service' or section_tag == 'skills':
+                section_data['items'] = section_content['items']
+                section_data['width'] = section_content['width']
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, 'skills' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
-                                 'industry', 'research', 'skills', 'teaching']:
+                                 'industry', 'research', 'teaching',
+                                 'certificates', 'activities', 'projects']:
+                if section_tag == 'certificates' or section_tag == 'activities' or section_tag == 'projects':
+                    section_tag = 'honors'
+                print(section_content)
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
