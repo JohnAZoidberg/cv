@@ -18,22 +18,22 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
+  - [education, Education]
+  - [industry, Work Experience]
+  - [skills, Skills]
+  - [service, Service]
+# Second page
+  - [NEWPAGE, NEWPAGE]
+  - [projects, Personal Projects]
+  - [activities, Activities]
+  - [certificates, Certificates]
 # - [about, NONE]
 # - [news, News]
-  - [education, Education]
 # - [research, Research Experience]
 # - [selected_publications, Selected Publications]
-# - [NEWPAGE, NEWPAGE]
 # - [teaching, Teaching Experience]
-  - [industry, Work Experience]
 # - [coursework, DHBW Coursework]
-  - [skills, Skills]
-# - [projects, Personal Projects]
-  - [service, Service]
-# - [certificates, Certificates]
-# - [NEWPAGE, NEWPAGE]
 # - [all_publications, All Publications]
-#  - [activities, Activities]
 
 about: ''
 
@@ -76,10 +76,6 @@ education:
   - school: Gymnasium am Römerkastell, Bad Kreuznach, Germany
     dates: Aug 2007 -- March 2016
 
-#certificates:
-#  - title: ITIL® Foundation Certificate in IT Service Management
-#    year: Aug 2017
-
 industry:
   - place: HPE, HP Inc., DXC, Microfocus
     location: See below
@@ -111,7 +107,7 @@ industry:
 #   advisor: Andreas Hausmann
     area: Setup and improved the emulation of HPE's new architecture \textit{The Machine}
   - place: HPE Enterprise Services \& DXC Technology
-    location: Bad Homburg, Germany
+    location: Bad Homburg, DE
     title: Data Science Intern
 #   advisor: Christian Prissner
     dates: March 2017 -- May 2017
@@ -141,13 +137,13 @@ industry:
     title: Software Engineer Intern
     dates: July 2014 -- Sept 2014
     details:
-      - Built an Android App for tracking internal meetings
+      - Built an Android App for managing internal meetings
   - place: "\\blackhref{Placelet.de}{\\textbf{Placelet.de}}"
     location: Bad Kreuznach, Germany
     title: "\\textbf{Principal Full Stack Webdeveloper}"
     dates: Aug 2013 -- Aug 2014
     details:
-      - Founded the company with other students of my high school
+      - "Founded the company with other students of my high school: Won best student-company in our state"
       - Built a social network from scratch
       - Users have travelled to 197 cities around the world
       - Created Website, Android App and administered Linux server for hosting
@@ -163,27 +159,37 @@ skills:
     - title: Languages, Proficient # that I'm good at
       details: C, C++, Python, Java, SQL, Nix, JavaScript
     - title: Languages, Familiar # that I know how to write
-      details: Haskell, Go, Lisp, Rust, PHP
+      details: Haskell, Rust, Go, Lisp, PHP
     - title: Human Languages
       details: German, English, Spanish, working on Thai and Chinese
     - title: Frameworks/Tools
-      details: OpenSSL, EDKII, Android, Git, Ansible, GNU Toolchain
+      details: OpenSSL, EDKII, Android, Git, Ansible, GNU Toolchain, Docker, systemd
     - title: Systems
-      details: Linux (NixOS, Arch, Debian/Ubuntu), Windows
+      details: GNU/Linux (NixOS, Arch, Debian/Ubuntu), Windows
 
 projects:
-  website:
-    name: Personal Blog and Website
-    url: https://danielschaefer.me
-    details:
-#   github:
-#     name: GitHub Portfolio
-#     url: https://github.com/JohnAZoidberg
-#     details:
-#       - Hosts code samples, original source code, and patches for
-#         open source projects.
-#       - XX original repositories, X forked repositories.
+  - title: "\\blackhref{https://github.com/JohnAZoidberg/DigitRecognition}{DigitRecognition}"
+    descr: Feed-forward backpropagation neural net from scratch to classify MNIST images with 98.82% accuracy
+  - title: Youtube to Podcast RSS Feed converter
+    descr: "Originally in \\blackhref{https://github.com/JohnAZoidberg/YoutubeRSS}{Python}, rewrite in \\blackhref{https://github.com/JohnAZoidberg/hyt-rss}{Haskell} and then \\blackhref{https://github.com/JohnAZoidberg/ryt-rss}{Rust}"
+  - title: "NixOS (Linux) \\blackhref{https://github.com/JohnAZoidberg/nix-konfiguriert}{configuration} of laptops, desktop and server"
+    descr:
+  - title: "\\blackhref{https://github.com/JohnAZoidberg/dotfiles/tree/master/roles}{Configuration} for 35 GNU/Linux programs that I use"
+    descr:
+  - title: Various other personal free-software projects and pull requests to other projects
+    descr: "Available on my \\blackhref{https://github.com/JohnAZoidberg}{GitHub} profile"
 
-# activities:
-#   - Rowing Club, RKV Bad Kreuznach, 2014 -- 2016
-#   - Robotics Club, Gymnasium am Römerkastell, 2012 -- 2014
+certificates:
+  - title: ITIL® Foundation Certificate in IT Service Management
+    year: Aug 2017
+  - title: Großes Latinum (7 years of Latin, 3 of those intensive, at high school)
+    year: 2010 -- 2016
+
+
+activities:
+  - title: Contributing packages and fixes to the NixOS Linux distribution
+    year: 2018 -- 2019
+  - title: Rowing Club, RKV Bad Kreuznach
+    year: 2014 -- 2016
+  - title: Robotics Club at high school, Gymnasium am Römerkastell
+    year: 2012 -- 2014
