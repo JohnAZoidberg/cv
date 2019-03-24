@@ -1,14 +1,7 @@
-[![Linux Build Status](https://travis-ci.org/bamos/cv.svg?branch=master)](https://travis-ci.org/bamos/cv)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/l06od9i143im059m?svg=true)](https://ci.appveyor.com/project/bamos/cv)
-[![Python Dependency Status](https://gemnasium.com/bamos/cv.svg)](https://gemnasium.com/bamos/cv)
-
 # About
-This repo contains the source I use to automatically generate
-my curriculum vitae as a
-[webpage](http://bamos.github.io)
-and
-[PDF](http://bamos.github.io/data/cv.pdf)
-from YAML and BibTeX input.
+This repo contains the source I use to automatically generate my curriculum vitae as a PDF from YAML and BibTeX input.
+
+It is a fork of the [original repository](https://github.com/bamos/cv) of Brandon Amos.
 
 [generate.py](generate.py) reads from [cv.yaml](cv.yaml) and
 [publications](publications) and outputs LaTeX and Markdown
