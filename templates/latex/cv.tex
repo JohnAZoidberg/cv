@@ -9,6 +9,7 @@
 \DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
 \DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 
+\newcommand{\blackhref}[2]{\href{#1}{\underline{\color{black}{#2}}}}
 
 \moderncvstyle{<< style >>}
 \moderncvcolor{<< color >>}
@@ -51,7 +52,7 @@
 % }
 
 \usepackage{lastpage}
-\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
+%\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
 
 \AtEndPreamble{\hypersetup{pdftitle={CV -- << name.first >> << name.last >>}}}
 \name{<< name.first >>}{<< name.last >>}
@@ -59,11 +60,11 @@
 %\address{street and number}{postcode city}{country}
 \phone{<< phone >>}
 \email{<< email >>}
-\homepage{<< url >>}
-\social[linkedin]{<<social.linkedin>>}
-\social[twitter]{<<social.twitter>>}
+%\homepage{<< url >>}
+%\social[linkedin]{<<social.linkedin>>}
+%\social[twitter]{<<social.twitter>>}
 \social[github]{<<social.github>>}
-\extrainfo{\small Generated on \today}
+\extrainfo{\small \today}
 %\photo[64pt][0.4pt]{picture}
 % \quote{Generated on \today}
 
