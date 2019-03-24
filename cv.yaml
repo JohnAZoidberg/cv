@@ -77,7 +77,8 @@ education:
     dates: Aug 2007 -- March 2016
 
 industry:
-  - place: HPE, HP Inc., DXC, Microfocus
+  - place: "\\underline{HPE}, HP Inc., DXC, Microfocus"
+    highlight: true
     location: See below
     title: Cooperative Student
     dates: Oct 2016 -- \textit{today}
@@ -88,12 +89,13 @@ industry:
     title: Software Development Intern
     dates: Jan -- Feb \& May -- September 2019
 #   advisor: Karlo Kraljic
-    area: Design and implemented Digital Rights Management for a Firmware Update Tool
-  - place: "\\textbf{Security Labs, HPE (Bristol, UK)}"
+    area: Design and implement cryptographic Digital Rights Management for a Firmware Update Tool in C++
+  - place: "Security Labs, HPE (Bristol, UK)"
     location: Bristol, United Kingdom
-    title: "\\textbf{Research Intern}"
+    title: "Research Intern"
+    highlight: true
     dates: May 2018 -- Aug 2018
-    advisor: Theo Koulouris
+#   advisor: Theo Koulouris, Nigel Edwards
     area: "Area: Firmware \\& Hardware Security"
     details:
       - "Benchmarking of \\blackhref{https://github.com/linuxkit/linuxkit/tree/master/projects/okernel}{Okernel} performance to evaluate business viability"
@@ -140,7 +142,8 @@ industry:
       - Built an Android App for managing internal meetings
   - place: "\\blackhref{Placelet.de}{\\textbf{Placelet.de}}"
     location: Bad Kreuznach, Germany
-    title: "\\textbf{Principal Full Stack Webdeveloper}"
+    title: "Principal Full Stack Webdeveloper"
+    highlight: true
     dates: Aug 2013 -- Aug 2014
     details:
       - "Founded the company with other students of my high school: Won best student-company in our state"

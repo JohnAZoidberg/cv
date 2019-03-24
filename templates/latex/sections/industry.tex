@@ -3,14 +3,25 @@
 ~< block body >~
   \begin{itemize}
     ~< for item in items >~
-      \item << item.title >>, << item.place >>\hfill << item.dates >>
-        \iffalse
-        \begin{itemize}
-          ~< for detail in item.details ->~
-            \item <<detail>>
-          ~<- endfor ->~
-        \end{itemize}
-        \fi
+      \item{
+        ~< if item.highlight >~
+        \textbf{
+        ~< endif >~
+        << item.title >>, << item.place >>\hfill << item.dates >>
+        ~< if item.highlight >~
+        }
+        ~< endif >~
+      }
+      ~< if item.area or item.details >~
+      \begin{itemize}
+        ~< if item.area >~
+          \item <<item.area>>
+        ~< endif >~
+        ~< for detail in item.details ->~
+          \item <<detail>>
+        ~<- endfor ->~
+      \end{itemize}
+      ~< endif >~
     ~< endfor >~
   \end{itemize}
 ~< endblock body >~
