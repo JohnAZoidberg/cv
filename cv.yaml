@@ -63,17 +63,17 @@ education:
   - school: DHBW Stuttgart
     location: Stuttgart, Germany
     degree: B.S. in Computer Science
-    dates: Oct 2016 -- Sept 2019
+    dates: Oct 2016 -- Sep 2019
 #   overallGPA: 3.99/4.00
 #   majorGPA: 4.00/4.00
 
   - school: Mahidol University International College, Bangkok
     location: Bangkok, Thailand
     degree: Exchange Semester, CS
-    dates: Jan 2018 -- April 2018
+    dates: Jan 2018 -- Apr 2018
 
   - school: Gymnasium am Römerkastell, Bad Kreuznach, Germany
-    dates: Aug 2007 -- March 2016
+    dates: Aug 2007 -- Mar 2016
 
 industry:
   - place: "\\underline{HPE}, HP Inc., DXC, Microfocus"
@@ -86,7 +86,7 @@ industry:
   - place: HPE Pointnext
     location: Munich, Germany
     title: Software Development Intern
-    dates: Jan -- Feb \& May -- September 2019
+    dates: Jan -- Feb \& May -- Sep 2019
 #   advisor: Karlo Kraljic
     area: Design and implement cryptographic Digital Rights Management for a Firmware Update Tool in C++
   - place: "Security Labs, HPE (Bristol, UK)"
@@ -129,7 +129,7 @@ industry:
   - place: Compañía de la Galleta (Canary Islands, Spain)
     location: Mas Palomas, Spain
     title: Store Clerk
-    dates: May 2016 -- Sept 2016
+    dates: May 2016 -- Sep 2016
     details:
       - Sold delicious handmade cookies to tourists in 3 languages
       - Built a custom ERP application to track inventory, sales and work hours
@@ -140,7 +140,7 @@ industry:
   - place: Boehringer Ingelheim
     location: Ingelheim, Germany
     title: Software Engineer Intern
-    dates: July 2014 -- Sept 2014
+    dates: Jul 2014 -- Sep 2014
     details:
       - Built an Android App for managing internal meetings
   - place: "\\blackhref{Placelet.de}{\\textbf{Placelet.de}}"
