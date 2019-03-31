@@ -23,7 +23,6 @@ order:
   - [skills, Skills]
   - [service, Service]
 # Second page
-  - [NEWPAGE, NEWPAGE]
   - [projects, Personal Projects]
   - [activities, Activities]
   - [certificates, Certificates]
@@ -44,7 +43,7 @@ service:
       details: '
         \begin{itemize}
           \item Provide technical and contractual support for members of the student network in person and via e-mail
-          \item Host internal services for the club
+          \item Administrate Linux servers
           \item Learn about networking while operating an ISP with real users
         \end{itemize}
       '
@@ -98,8 +97,8 @@ industry:
 #   advisor: Theo Koulouris, Nigel Edwards
     area: "Area: Firmware \\& Hardware Security"
     details:
-      - "Benchmarking of \\blackhref{https://github.com/linuxkit/linuxkit/tree/master/projects/okernel}{Okernel} performance to evaluate business viability"
-      - "First working implementation of \\blackhref{https://www.intel.com/content/www/us/en/io/pci-express/pcie-device-security-enhancements-spec.html}{PCIe Security Enhancements}"
+      - "Benchmarked \\blackhref{https://github.com/linuxkit/linuxkit/tree/master/projects/okernel}{Okernel} performance to evaluate business viability"
+      - "Created the first functional implementation of \\blackhref{https://www.intel.com/content/www/us/en/io/pci-express/pcie-device-security-enhancements-spec.html}{PCIe Security Enhancements}"
       - Built client in userspace and EDKII with OpenSSL that authenticates a custom built QEMU PCIe device
       - Provided feedback to improve the protocol back to Intel
   - place: Hewlett Packard Enterprise
@@ -107,15 +106,19 @@ industry:
     title: Research Intern
     dates: Nov 2017 -- Jan 2018
 #   advisor: Andreas Hausmann
-    area: Setup and improved the emulation of HPE's new architecture \textit{The Machine}
+    area: Set up and improved the emulation of HPE's new architecture \textit{The Machine}
+    details:
+      - Rewrite of complex bash script as modular Ansible playbook
+      - Share root filesystem between nodes with PXE boot and make it writable with OverlayFS
   - place: HPE Enterprise Services \& DXC Technology
     location: Bad Homburg, DE
     title: Data Science Intern
 #   advisor: Christian Prissner
-    dates: March 2017 -- May 2017
-    area: Machine Learning for Legal Applications (Due Diligence)
+    dates: Mar 2017 -- May 2017
     details:
-      - Used (now) Microfocus IDOL and Vertica, as well as Apache Avro and Python \& Bash
+      - Efficiently stored 75GB of data from an API into Vertifca in a schema that is conducive to analytics
+      - Wrote data processing and machine learning scripts to efficiently filter 18M news articles down to 2M
+      - Trained HPE IDOL to do sentiment analysis on the remaining articles
   - place: HPE Enterprise Services
     location: Boeblingen, Germany
     title: Full Stack Web Development Intern
@@ -146,7 +149,7 @@ industry:
     highlight: true
     dates: Aug 2013 -- Aug 2014
     details:
-      - "Founded the company with other students of my high school: Won best student-company in our state"
+      - "Founded the company with other students of my high school: Won best student company in our state"
       - Built a social network from scratch
       - Users have travelled to 197 cities around the world
       - Created Website, Android App and administered Linux server for hosting
@@ -162,25 +165,31 @@ skills:
     - title: Languages, Proficient # that I'm good at
       details: C, C++, Python, Java, SQL, Nix, JavaScript
     - title: Languages, Familiar # that I know how to write
-      details: Haskell, Rust, Go, Lisp, PHP
+      details: Haskell, Rust, Go, Lisp, PHP, Elixir
     - title: Human Languages
       details: German, English, Spanish, working on Thai and Chinese
-    - title: Frameworks/Tools
+    - title: Technologies I've used
       details: OpenSSL, EDKII, Android, Git, Ansible, GNU Toolchain, Docker, systemd
+    - title: ''
+      details: MySQL, PostgreSQL, Vertica, Cassandra, QEMU/KVM, NumPy\&pandas
     - title: Systems
-      details: GNU/Linux (NixOS, Arch, Debian/Ubuntu), Windows
+      details: GNU/Linux (NixOS, Arch, Debian/Ubuntu), Windows, UEFI
 
 projects:
   - title: "\\blackhref{https://github.com/JohnAZoidberg/DigitRecognition}{DigitRecognition}"
-    descr: Feed-forward backpropagation neural net from scratch to classify MNIST images with 98.82% accuracy
+    descr: '\item Feed-forward backpropagation neural net from scratch to classify MNIST images with 98.82\% accuracy'
   - title: Youtube to Podcast RSS Feed converter
-    descr: "Originally in \\blackhref{https://github.com/JohnAZoidberg/YoutubeRSS}{Python}, rewrite in \\blackhref{https://github.com/JohnAZoidberg/hyt-rss}{Haskell} and then \\blackhref{https://github.com/JohnAZoidberg/ryt-rss}{Rust}"
-  - title: "NixOS (Linux) \\blackhref{https://github.com/JohnAZoidberg/nix-konfiguriert}{configuration} of laptops, desktop and server"
-    descr:
-  - title: "\\blackhref{https://github.com/JohnAZoidberg/dotfiles/tree/master/roles}{Configuration} for 35 GNU/Linux programs that I use"
-    descr:
-  - title: Various other personal free-software projects and pull requests to other projects
-    descr: "Available on my \\blackhref{https://github.com/JohnAZoidberg}{GitHub} profile"
+    descr: '\item Originally in \blackhref{https://github.com/JohnAZoidberg/YoutubeRSS}{Python}, rewrite in \blackhref{https://github.com/JohnAZoidberg/hyt-rss}{Haskell} and then \blackhref{https://github.com/JohnAZoidberg/ryt-rss}{Rust}'
+  - title: "Full-system NixOS (Linux) \\blackhref{https://github.com/JohnAZoidberg/nix-konfiguriert}{configuration} of laptops, desktop and server"
+  - title: '\blackhref{https://github.com/JohnAZoidberg/dotfiles/tree/master/roles}{Configuration files} for 35 GNU/Linux programs that I use'
+  - title: Various other personal and uni projects released under free-software licenses
+    descr: '\item 45 repositories on my \\blackhref{https://github.com/JohnAZoidberg}{GitHub} profile'
+  - title: Selected contributions to other projects
+    descr: '\item \blackhref{https://github.com/NixOS/nixpkgs/commits?author=johnazoidberg}{nixpkgs}: Package repository of NixOS Linux distribution
+    \item \blackhref{https://github.com/u-root/u-root/commits?author=johnazoidberg}{u-root}: Go userland for Linuxboot firmware
+    \item \blackhref{https://github.com/pciutils/pciutils/commits?author=johnazoidberg}{pciutils}: Library and tools to peek and poke PCIe devices
+    \item \blackhref{https://github.com/gregkh/usbutils/commits?author=johnazoidberg}{usbutils}: Library and tools to peek and poke USB devices
+           '
 
 certificates:
   - title: ITIL® Foundation Certificate in IT Service Management
@@ -190,8 +199,10 @@ certificates:
 
 
 activities:
-  - title: Contributing packages and fixes to the NixOS Linux distribution
-    year: 2018 -- 2019
+  - title: "\\blackhref{https://github.com/NixOS/nixpkgs/commits?author=johnazoidberg}{Contributing} packages and fixes to the NixOS Linux distribution"
+    year: 2018 -- today
+  - title: "\\blackhref{https://www.worldcubeassociation.org/persons/2012SCHA01}{Competitive Speedcuber} at the World Cube Association (11.72s Rubik's Cube solve)"
+    year: 2012 -- 2017
   - title: Rowing Club, RKV Bad Kreuznach
     year: 2014 -- 2016
   - title: Robotics Club at high school, Gymnasium am Römerkastell
