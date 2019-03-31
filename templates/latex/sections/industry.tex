@@ -2,6 +2,7 @@
 
 ~< block body >~
   \begin{itemize}
+  \setlength\itemsep{1ex}
     ~< for item in items >~
       \item{
         ~< if item.highlight >~
@@ -9,6 +10,7 @@
         ~< endif >~
         << item.title >>, << item.place >>\hfill << item.dates >>
         ~< if item.highlight >~
+	\hspace*{-1.5ex} % Why does bold text add more padding?
         }
         ~< endif >~
       }
