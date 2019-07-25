@@ -44,7 +44,7 @@ service:
         \begin{itemize}
           \item Provide technical and contractual support for members of the student network in person and via e-mail
           \item Administrate Linux servers
-          \item Learn about networking while operating an ISP with real users
+          \item Learn about networking while operating an ISP with >5.5k real users
         \end{itemize}
       '
 
@@ -99,7 +99,7 @@ industry:
     details:
       - "Benchmarked \\blackhref{https://github.com/linuxkit/linuxkit/tree/master/projects/okernel}{Okernel} performance to evaluate business viability"
       - "Created the first functional implementation of \\blackhref{https://www.intel.com/content/www/us/en/io/pci-express/pcie-device-security-enhancements-spec.html}{PCIe Security Enhancements}"
-      - Built client in userspace and EDKII with OpenSSL that authenticates a custom built QEMU PCIe device
+      - Built custom QEMU PCIe device and client in userspace and EDKII with OpenSSL to authenticate it
       - Provided feedback to improve the protocol back to Intel
   - place: Hewlett Packard Enterprise
     location: Boeblingen, Germany
@@ -116,7 +116,7 @@ industry:
 #   advisor: Christian Prissner
     dates: Mar 2017 -- May 2017
     details:
-      - Efficiently stored 75GB of data from an API into Vertifca in a schema that is conducive to analytics
+      - Efficiently stored 75GB of data from an API into Vertica in a schema that is conducive to analytics
       - Wrote data processing and machine learning scripts to efficiently filter 18M news articles down to 2M
       - Trained HPE IDOL to do sentiment analysis on the remaining articles
   - place: HPE Enterprise Services
@@ -132,7 +132,7 @@ industry:
     dates: May 2016 -- Sep 2016
     details:
       - Sold delicious handmade cookies to tourists in 3 languages
-      - Built a custom ERP application to track inventory, sales and work hours
+      - Built a custom ERP application to track inventory, sales and work hours (Python)
   - place: "\\blackhref{myapp24.de}{myapp24.de}"
     location: Bad Kreuznach, Germany
     title: Full Stack Web Development Intern
@@ -142,7 +142,7 @@ industry:
     title: Software Engineer Intern
     dates: Jul 2014 -- Sep 2014
     details:
-      - Built an Android App for managing internal meetings
+      - Built an Android App for managing and scheduling internal meetings
   - place: "\\blackhref{Placelet.de}{\\textbf{Placelet.de}}"
     location: Bad Kreuznach, Germany
     title: "Principal Full Stack Webdeveloper"
@@ -171,7 +171,7 @@ skills:
     - title: Technologies I've used
       details: OpenSSL, EDKII, Android, Git, Ansible, GNU Toolchain, Docker, systemd
     - title: ''
-      details: MySQL, PostgreSQL, Vertica, Cassandra, QEMU/KVM, NumPy\&pandas
+      details: MySQL, PostgreSQL, Vertica, Cassandra, QEMU/KVM, NumPy\&pandas #, HTML\&CSS
     - title: Systems
       details: GNU/Linux (NixOS, Arch, Debian/Ubuntu), Windows, UEFI
 
@@ -183,12 +183,12 @@ projects:
   - title: "Full-system NixOS (Linux) \\blackhref{https://github.com/JohnAZoidberg/nix-konfiguriert}{configuration} of laptops, desktop and server"
   - title: '\blackhref{https://github.com/JohnAZoidberg/dotfiles/tree/master/roles}{Configuration files} for 35 GNU/Linux programs that I use'
   - title: Various other personal and uni projects released under free-software licenses
-    descr: '\item 45 repositories on my \\blackhref{https://github.com/JohnAZoidberg}{GitHub} profile'
+    descr: '\item 45 repositories on my \blackhref{https://github.com/JohnAZoidberg}{GitHub} profile'
   - title: Selected contributions to other projects
-    descr: '\item \blackhref{https://github.com/NixOS/nixpkgs/commits?author=johnazoidberg}{nixpkgs}: Package repository of NixOS Linux distribution
-    \item \blackhref{https://github.com/u-root/u-root/commits?author=johnazoidberg}{u-root}: Go userland for Linuxboot firmware
-    \item \blackhref{https://github.com/pciutils/pciutils/commits?author=johnazoidberg}{pciutils}: Library and tools to peek and poke PCIe devices
-    \item \blackhref{https://github.com/gregkh/usbutils/commits?author=johnazoidberg}{usbutils}: Library and tools to peek and poke USB devices
+    descr: '\item \blackhref{https://github.com/NixOS/nixpkgs/commits?author=johnazoidberg}{nixpkgs}: Maintain existing and add new services and packages of NixOS Linux distribution
+    \item \blackhref{https://github.com/pciutils/pciutils/commits?author=johnazoidberg}{pciutils}: Add API \& command to manipulate advanced PCIe configuration structures
+    \item \blackhref{https://github.com/gregkh/usbutils/commits?author=johnazoidberg}{usbutils}: Extract names of unknown devices from USB descriptors
+    \item \blackhref{https://github.com/u-root/u-root/commits?author=johnazoidberg}{u-root}: Improve command in Go userland for Linuxboot firmware
            '
 
 certificates:
