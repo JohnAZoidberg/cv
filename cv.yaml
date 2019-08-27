@@ -89,13 +89,15 @@ industry:
     dates: Jan -- Feb \& May -- Sep 2019
 #   advisor: Karlo Kraljic
     area: Design and implement cryptographic Digital Rights Management for a Firmware Update Tool in C++
+    details:
+      - Develop Windows application to deploy firmware and driver updates
+      - "Automate firmware update process: Querying status-quo, finding new releases, flashing updates  (Python)"
   - place: "Security Labs, HPE (Bristol, UK)"
     location: Bristol, United Kingdom
     title: Systems Security Researcher
     highlight: true
     dates: May 2018 -- Aug 2018
 #   advisor: Theo Koulouris, Nigel Edwards
-    area: "Area: Firmware \\& Hardware Security"
     details:
       - "Benchmarked \\blackhref{https://github.com/linuxkit/linuxkit/tree/master/projects/okernel}{Okernel} performance to evaluate business viability"
       - "Created the first functional implementation of \\blackhref{https://www.intel.com/content/www/us/en/io/pci-express/pcie-device-security-enhancements-spec.html}{PCIe Security Enhancements}"
@@ -109,7 +111,7 @@ industry:
     area: Set up and improved the emulation of HPE's new architecture \textit{The Machine}
     details:
       - Rewrite of complex bash script as modular Ansible playbook
-      - Share root filesystem between nodes with PXE boot and make it writable with OverlayFS
+      - Share root filesystem between nodes with iPXE \& NFS and make it writable with OverlayFS
   - place: HPE Enterprise Services \& DXC Technology
     location: Bad Homburg, DE
     title: Data Scientist
@@ -118,7 +120,7 @@ industry:
     details:
       - Efficiently stored 75GB of data from an API into Vertica in a schema that is conducive to analytics
       - Wrote data processing and machine learning scripts to efficiently filter 18M news articles down to 2M
-      - Trained HPE IDOL to do sentiment analysis on the remaining articles
+      - Trained HPE IDOL to do clustering and sentiment analysis on the remaining articles
   - place: HPE Enterprise Services
     location: Boeblingen, Germany
     title: Full Stack Web Developer
@@ -150,8 +152,7 @@ industry:
     dates: Aug 2013 -- Aug 2014
     details:
       - "Founded the company with other students of my high school: Won best student company in our state"
-      - Built a social network from scratch
-      - Users have travelled to 197 cities around the world
+      - Built a social network from scratch - Users have travelled to 197 cities around the world
       - Created Website, Android App and administered Linux server for hosting
 
 #coursework:
@@ -166,8 +167,8 @@ skills:
       details: C, C++, Python, Java, SQL, Nix, JavaScript
     - title: Languages, Familiar # that I know how to write
       details: Haskell, Rust, Go, Lisp, PHP, Elixir
-    - title: Human Languages
-      details: German, English, Spanish, working on Thai and Chinese
+    - title: Natural Languages
+      details: German, English, Spanish, working on Thai and Mandarin
     - title: Technologies I've used
       details: OpenSSL, EDKII, Android, Git, Ansible, GNU Toolchain, Docker, systemd
     - title: ''
