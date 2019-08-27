@@ -76,13 +76,13 @@ education:
     dates: Aug 2007 -- Mar 2016
 
 industry:
-  - place: "\\underline{HPE}, HP Inc., DXC, Microfocus"
+  - place: "HPE"
     highlight: true
     location: See below
-    title: Cooperative Student
+    title: Full-time employee and Cooperative Student
     dates: Oct 2016 -- \textit{today}
     details:
-      - Work half of every semester in a different team at the companies
+      - Work half of every semester in a different team at HPE and (split-)partners, see below
   - place: HPE Pointnext
     location: Munich, Germany
     title: Software Development Intern
