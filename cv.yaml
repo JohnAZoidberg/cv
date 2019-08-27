@@ -85,13 +85,13 @@ industry:
       - Work half of every semester in a different team at HPE and (split-)partners, see below
   - place: HPE Pointnext
     location: Munich, Germany
-    title: Software Development Intern
+    title: Systems Software Engineer
     dates: Jan -- Feb \& May -- Sep 2019
 #   advisor: Karlo Kraljic
     area: Design and implement cryptographic Digital Rights Management for a Firmware Update Tool in C++
   - place: "Security Labs, HPE (Bristol, UK)"
     location: Bristol, United Kingdom
-    title: "Research Intern"
+    title: Systems Security Researcher
     highlight: true
     dates: May 2018 -- Aug 2018
 #   advisor: Theo Koulouris, Nigel Edwards
@@ -103,7 +103,7 @@ industry:
       - Provided feedback to improve the protocol back to Intel
   - place: Hewlett Packard Enterprise
     location: Boeblingen, Germany
-    title: Research Intern
+    title: Systems Software Engineer
     dates: Nov 2017 -- Jan 2018
 #   advisor: Andreas Hausmann
     area: Set up and improved the emulation of HPE's new architecture \textit{The Machine}
@@ -112,7 +112,7 @@ industry:
       - Share root filesystem between nodes with PXE boot and make it writable with OverlayFS
   - place: HPE Enterprise Services \& DXC Technology
     location: Bad Homburg, DE
-    title: Data Science Intern
+    title: Data Scientist
 #   advisor: Christian Prissner
     dates: Mar 2017 -- May 2017
     details:
@@ -121,7 +121,7 @@ industry:
       - Trained HPE IDOL to do sentiment analysis on the remaining articles
   - place: HPE Enterprise Services
     location: Boeblingen, Germany
-    title: Full Stack Web Development Intern
+    title: Full Stack Web Developer
 #   advisor: Manuel Meyer, Bernd Gill
     dates: Oct 2016 -- Dec 2016
     details:
